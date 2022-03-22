@@ -1,15 +1,16 @@
-import './App.css';
-import Hello from './component/Hello';
-import Welcome from './component/Welcome';
+import "./App.css";
+import Day from "./component/Day";
+import DayList from "./component/DayList";
+import Header from "./component/Header";
 
 function App() {
-  return (
-  <div className="App">
-    <Hello />
-    <Welcome />
-  </div>
-  )
+    return (
+        <div className="App">
+            <Header />
+            <DayList />
+            <Day />
+        </div>
+    );
 }
 
 export default App;
-

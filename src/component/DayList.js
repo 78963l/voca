@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from 'react';
-import useFetch from './../hooks/useFetch';
+// import { useEffect, useState } from 'react';
+import useFetch from "./../hooks/useFetch";
 
 export default function DayList() {
     const days = useFetch("http://localhost:3001/days");
@@ -15,19 +15,19 @@ export default function DayList() {
     //     })
     // }, []);
 
-    if(days.length === 0){
-        return <span>Loading...</span>
+    if (days.length === 0) {
+        return <span>Loading...</span>;
     }
 
     return (
         <>
-        <ul className="list_day">
-            {days.map(day => (
-                <li key={day.id}>
-                    <Link to={`/day/${day.day}`}>Day {day.day}</Link>
-                </li>
-            ))}
-        </ul>
+            <ul className="list_day">
+                {days.map(day => (
+                    <li key={day.id}>
+                        <Link to={`/day/${day.day}`}>Day {day.day}</Link>
+                    </li>
+                ))}
+            </ul>
         </>
     );
 }

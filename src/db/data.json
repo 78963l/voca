@@ -38,7 +38,7 @@
       "day": 3,
       "eng": "school",
       "kor": "학교",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": 6,
@@ -65,7 +65,7 @@
       "day": "4",
       "eng": "monkey",
       "kor": "원숭이",
-      "isDone": false,
+      "isDone": true,
       "id": 9
     },
     {

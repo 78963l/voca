@@ -2,7 +2,7 @@
 import { useParams } from "react-router-dom";
 import Word from "./Word";
 // import { useEffect, useState } from 'react';
-import useFetch from './../hooks/useFetch';
+import useFetch from "./../hooks/useFetch";
 
 export default function Day() {
     //dummy.words
@@ -19,7 +19,7 @@ export default function Day() {
     //     })
     // }, [params.day]);
 
-    const words = useFetch(`http://localhost:3001/words?day=${params.day}`)
+    const words = useFetch(`http://localhost:3001/words?day=${params.day}`);
     return (
         <div>
             <h2>Day {params.day}</h2>
